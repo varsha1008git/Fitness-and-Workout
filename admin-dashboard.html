@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin Dashboard - Fitness Planner</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background: linear-gradient(to right, #1e3c72, #2a5298);
+			color: #fff;
+			padding: 20px;
+		}
+
+		h1 {
+			text-align: center;
+			margin-bottom: 30px;
+			color: #ffcc00;
+		}
+
+		.plan-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.plan-box {
+			background-color: #fff;
+			color: #000;
+			border-radius: 10px;
+			margin: 10px;
+			padding: 15px;
+			width: 250px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			transition: transform 0.2s;
+		}
+
+		.plan-box:hover {
+			transform: scale(1.05);
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			margin-top: 20px;
+			width: 300px;
+			margin: 0 auto;
+		}
+
+		input,
+		textarea {
+			padding: 10px;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			border: none;
+			font-size: 1em;
+		}
+
+		button {
+			padding: 10px;
+			border: none;
+			background-color: #ff5733;
+			color: white;
+			font-size: 1.2em;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #c70039;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Admin Dashboard - Manage Workout Plans</h1>
+
+	<div class="plan-container">
+		<div class="plan-box">
+			<h3>Plan 1: Beginner's Full Body</h3>
+			<p>Focus: Whole Body</p>
+			<p>Duration: 30 mins</p>
+			<button>Edit Plan</button>
+		</div>
+		<!-- Add more plan boxes similarly -->
+	</div>
+
+	<h2>Add/Edit Workout Plan</h2>
+	<form>
+		<input type="text" placeholder="Plan Name" required>
+		<textarea placeholder="Plan Description" required></textarea>
+		<input type="text" placeholder="Duration (e.g., 30 mins)" required>
+		<button type="submit">Add Plan</button>
+	</form>
+
+</body>
+
+</html>

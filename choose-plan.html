@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Choose Plan - Fitness Planner</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background: linear-gradient(to right, #ff7e5f, #feb47b);
+			color: #0b0606;
+			text-align: center;
+			padding: 20px;
+		}
+
+		h1 {
+			margin-bottom: 20px;
+			font-size: 2.5em;
+		}
+
+		#plans-list {
+			list-style: none;
+			padding: 0;
+		}
+
+		#plans-list li {
+			background: rgba(255, 255, 255, 0.1);
+			border: 2px solid #120a0a;
+			border-radius: 10px;
+			margin: 10px;
+			padding: 15px;
+			cursor: pointer;
+			transition: transform 0.3s;
+			font-size: 1.2em;
+		}
+
+		#plans-list li:hover {
+			transform: scale(1.05);
+			background: rgba(255, 255, 255, 0.2);
+		}
+
+		#chosen-plan-message {
+			margin-top: 20px;
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+		button {
+			padding: 10px 15px;
+			background-color: #ff5733;
+			border: none;
+			border-radius: 5px;
+			color: white;
+			font-size: 1em;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+
+		button:hover {
+			background-color: #c70039;
+		}
+	</style>
+</head>
+
+<body id="choose-plan-page">
+	<h1>Choose a Plan</h1>
+	<ul id="plans-list">
+		<li onclick="choosePlan('Beginner Full-Body')">Beginner Full-Body</li>
+		<li onclick="choosePlan('HIIT Fat Burner')">HIIT Fat Burner</li>
+		<li onclick="choosePlan('Strength and Conditioning')">Strength and Conditioning</li>
+		<li onclick="choosePlan('Cardio Kickboxing')">Cardio Kickboxing</li>
+		<li onclick="choosePlan('Yoga for Flexibility')">Yoga for Flexibility</li>
+		<li onclick="choosePlan('Pilates Core Strength')">Pilates Core Strength</li>
+		<li onclick="choosePlan('CrossFit Fundamentals')">CrossFit Fundamentals</li>
+		<li onclick="choosePlan('5K Training Plan')">5K Training Plan</li>
+		<li onclick="choosePlan('Strength Training for Beginners')">Strength Training for Beginners</li>
+		<li onclick="choosePlan('Advanced Strength Program')">Advanced Strength Program</li>
+		<li onclick="choosePlan('Upper Body Focus')">Upper Body Focus</li>
+		<li onclick="choosePlan('Lower Body Workout')">Lower Body Workout</li>
+		<li onclick="choosePlan('Abs and Core Blast')">Abs and Core Blast</li>
+		<li onclick="choosePlan('Fat Loss for Beginners')">Fat Loss for Beginners</li>
+		<li onclick="choosePlan('Bootcamp Circuit')">Bootcamp Circuit</li>
+		<li onclick="choosePlan('Boxing Conditioning')">Boxing Conditioning</li>
+		<li onclick="choosePlan('Endurance Running')">Endurance Running</li>
+		<li onclick="choosePlan('Mobility and Recovery')">Mobility and Recovery</li>
+		<li onclick="choosePlan('Bodyweight Fitness')">Bodyweight Fitness</li>
+		<li onclick="choosePlan('Plyometric Power')">Plyometric Power</li>
+		<li onclick="choosePlan('Interval Running')">Interval Running</li>
+		<li onclick="choosePlan('Strength and Agility')">Strength and Agility</li>
+		<li onclick="choosePlan('Glute Sculptor')">Glute Sculptor</li>
+		<li onclick="choosePlan('Swimming Fitness Plan')">Swimming Fitness Plan</li>
+		<li onclick="choosePlan('Barbell Basics')">Barbell Basics</li>
+		<li onclick="choosePlan('Powerlifting Prep')">Powerlifting Prep</li>
+		<li onclick="choosePlan('Dance Cardio')">Dance Cardio</li>
+		<li onclick="choosePlan('Stair Climbing')">Stair Climbing</li>
+		<li onclick="choosePlan('Advanced Core Strength')">Advanced Core Strength</li>
+		<li onclick="choosePlan('Flexibility and Balance')">Flexibility and Balance</li>
+	</ul>
+	<p id="chosen-plan-message"></p>
+
+	<button onclick="window.location.href='welcome.html'">Back to Welcome</button>
+
+	<script>
+		function choosePlan(planName) {
+			document.getElementById('chosen-plan-message').innerText = `You have chosen the ${planName} plan.`;
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+/* General Styling */
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f0f8ff;
+}
+
+/* Page Containers */
+.page {
+	padding: 20px;
+	display: none;
+}
+
+/* Heading Styles */
+h1,
+h2 {
+	color: #333;
+	text-align: center;
+}
+
+/* Buttons and Inputs */
+button,
+input,
+textarea {
+	padding: 10px;
+	margin-top: 10px;
+	display: block;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	transition: 0.3s ease;
+}
+
+button:hover {
+	background-color: #28a745;
+	color: white;
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+	width: 100%;
+	border: 1px solid #ddd;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+}
+
+/* Login Page */
+#login-page {
+	background-color: #ffecd2;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-container {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+	color: red;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* Welcome Page */
+#welcome-page {
+	background-color: #d1f7ff;
+	text-align: center;
+	padding: 50px;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	background-color: #007bff;
+	padding: 10px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	margin: 0 15px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 8px;
+	transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+	background-color: #0056b3;
+}
+
+/* Plans Page */
+.plans-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 50px 0;
+}
+
+.plan-box {
+	background-color: #fff;
+	width: 30%;
+	border: 1px solid #ddd;
+	border-radius: 12px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin: 15px;
+	text-align: center;
+	transition: 0.3s;
+}
+
+.plan-box:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.plan-box h3 {
+	font-size: 24px;
+	color: #007bff;
+}
+
+.plan-box p {
+	font-size: 16px;
+	color: #666;
+}
+
+/* Choose Plan Page */
+#choose-plan-page {
+	background-color: #f7f7f7;
+	padding: 30px;
+}
+
+#plans-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+#plans-list li {
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #130404;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+#plans-list li:hover {
+	background-color: #e0f7ff;
+}
+
+/* Track Progress Page */
+#track-progress-page {
+	background-color: #fffbeb;
+	padding: 20px;
+	text-align: center;
+}
+
+#progress-update {
+	width: 80%;
+	padding: 10px;
+	border-radius: 8px;
+}
+
+#update-progress {
+	background-color: #28a745;
+	color: white;
+	border: none;
+	margin-top: 10px;
+}
+
+#motivation-message {
+	font-size: 20px;
+	color: #ff9800;
+	margin-top: 20px;
+}
+
+/* Health Checker Page */
+#health-checker-page {
+	background-color: #f0f8ff;
+	padding: 30px;
+}
+
+.health-form input {
+	padding: 8px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+#check-health-btn {
+	background-color: #ff5722;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 8px;
+}
+
+#check-health-btn:hover {
+	background-color: #e64a19;
+}
+
+#health-result {
+	font-size: 18px;
+	color: #d32f2f;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+/* Footer */
+footer {
+	background-color: #007bff;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+footer p {
+	margin: 0;
+}

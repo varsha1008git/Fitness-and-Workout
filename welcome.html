@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome - Fitness Planner</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background: linear-gradient(to right, #ff6a00, #ee0979);
+			color: #fff;
+			text-align: center;
+		}
+
+		h1 {
+			margin-bottom: 20px;
+			font-size: 2.5em;
+		}
+
+		button {
+			padding: 10px 15px;
+			background-color: #ff5733;
+			border: none;
+			border-radius: 5px;
+			color: white;
+			font-size: 1em;
+			cursor: pointer;
+			transition: background-color 0.3s;
+			margin-top: 20px;
+		}
+
+		button:hover {
+			background-color: #c70039;
+		}
+
+		nav {
+			margin-top: 30px;
+		}
+
+		nav a {
+			color: white;
+			margin: 0 15px;
+			text-decoration: none;
+			font-size: 1.2em;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Welcome</h1>
+	<p id="user-message"></p>
+
+	<nav>
+		<a href="plans.html">View Plans</a>
+		<a href="choose-plan.html">Choose Plan</a>
+		<a href="track-progress.html">Track Progress</a>
+		<a href="health-checker.html">Health Checker</a>
+	</nav>
+
+	<button onclick="logout()">Logout</button>
+
+	<script>
+		// Display welcome message with username
+		const username = document.getElementById('username').value;
+		document.getElementById('user-message').innerText = `Hello, ${username}!`;
+
+		function logout() {
+			localStorage.removeItem('username'); // Clear the stored username
+			window.location.href = 'login.html'; // Redirect to login page
+		}
+	</script>
+</body>
+
+</html>
